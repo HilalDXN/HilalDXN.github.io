@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>فرصة عمل مرنة من المنزل | ابدأ مشروعك الخاص</title>
+<meta name="description" content="اكتشف فرصة عمل مرنة تبدأها من جوالك، بتدريب ودعم كامل، وابنِ دخلك الإضافي بوقتك الخاص.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#1c2b22;
+  --canopy:#3a5f43;
+  --amber:#c17f3e;
+  --amber-deep:#96602c;
+  --mist:#f3f6f1;
+  --paper:#ffffff;
+  --stone:#6b7568;
+  --radius:20px;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'IBM Plex Sans Arabic',sans-serif;color:var(--ink);background:var(--paper);line-height:1.8;}
+h1,h2,h3{font-family:'El Messiri',serif;}
+img{max-width:100%;display:block;}
+a{text-decoration:none;color:inherit;}
+.wrap{max-width:1020px;margin:0 auto;padding:0 24px;}
+:focus-visible{outline:2px solid var(--amber-deep);outline-offset:3px;}
+
+.eyebrow{display:inline-block;color:var(--amber-deep);font-weight:700;font-size:13px;letter-spacing:.5px;margin-bottom:10px;}
+
+.topbar{display:flex;align-items:center;justify-content:space-between;padding:20px 24px;position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(6px);z-index:50;border-bottom:1px solid #e8ece6;}
+.brand{font-family:'El Messiri',serif;font-weight:700;font-size:21px;color:var(--ink);}
+.btn-ghost{border:1.5px solid var(--ink);color:var(--ink);padding:9px 20px;border-radius:30px;font-weight:600;font-size:14px;}
+
+.hero{position:relative;overflow:hidden;background:var(--mist);padding:90px 24px 70px;text-align:center;}
+.rings{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:640px;height:640px;pointer-events:none;}
+.hero-inner{position:relative;z-index:2;}
+.hero h1{font-size:clamp(30px,5vw,46px);font-weight:700;max-width:760px;margin:0 auto 20px;}
+.hero .sub{font-size:18px;color:var(--stone);max-width:540px;margin:0 auto 34px;}
+.btn-primary{display:inline-block;background:var(--amber-deep);color:var(--paper);padding:16px 42px;border-radius:40px;font-weight:700;font-size:17px;box-shadow:0 12px 28px rgba(150,96,44,.3);}
+.hero-figure{margin:50px auto 0;max-width:400px;height:260px;border:2px dashed #cdd8cf;border-radius:var(--radius);display:flex;align-items:center;justify-content:center;color:var(--stone);font-weight:600;background:var(--paper);}
+
+@keyframes riseIn{from{opacity:0;transform:translateY(14px);}to{opacity:1;transform:translateY(0);}}
+@media (prefers-reduced-motion:no-preference){
+  .hero-inner{animation:riseIn .7s ease both;}
+}
+
+.section{padding:72px 24px;}
+.section.tint{background:var(--mist);}
+.section-head{text-align:center;max-width:600px;margin:0 auto 44px;}
+.section-head h2{font-size:30px;font-weight:700;}
+.section-head p{color:var(--stone);margin-top:10px;}
+
+.qualify-list{display:flex;flex-direction:column;gap:14px;max-width:560px;margin:0 auto;}
+.qualify-item{display:flex;align-items:center;gap:16px;background:var(--paper);border:1px solid #e8ece6;border-radius:14px;padding:18px 22px;}
+.qualify-item .tick{flex-shrink:0;width:34px;height:34px;border-radius:50%;border:2px solid var(--amber);display:flex;align-items:center;justify-content:center;color:var(--amber-deep);font-weight:700;font-size:15px;}
+.qualify-item p{font-size:15px;color:var(--ink);}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+.card{background:var(--paper);border:1px solid #e8ece6;border-radius:var(--radius);padding:30px 24px;text-align:center;}
+.card .icon{font-size:32px;margin-bottom:14px;}
+.card h3{font-size:18px;font-weight:600;margin-bottom:8px;}
+.card p{color:var(--stone);font-size:15px;}
+
+.steps-list{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;}
+.step{text-align:center;}
+.step-ring{width:60px;height:60px;border-radius:50%;border:2px solid var(--amber);display:flex;align-items:center;justify-content:center;margin:0 auto 16px;position:relative;}
+.step-ring::before{content:'';position:absolute;inset:-8px;border:1px solid rgba(193,127,62,.35);border-radius:50%;}
+.step-ring span{background:var(--ink);color:var(--paper);width:38px;height:38px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-weight:700;font-family:'El Messiri',serif;}
+.step h3{font-size:17px;font-weight:600;margin-bottom:6px;}
+.step p{color:var(--stone);font-size:14px;}
+
+.testi-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;}
+.testi{background:var(--paper);border:1px solid #e8ece6;border-radius:var(--radius);padding:28px;}
+.testi .mark{width:26px;height:26px;border:2px solid var(--amber);border-radius:50%;margin-bottom:14px;}
+.testi p{color:var(--ink);margin-bottom:16px;}
+.testi .name{font-weight:700;font-size:14px;color:var(--canopy);}
+
+details{background:var(--paper);border:1px solid #e8ece6;border-radius:14px;padding:18px 22px;margin-bottom:12px;}
+summary{font-weight:700;cursor:pointer;font-family:'El Messiri',serif;font-size:16px;}
+details p{margin-top:12px;color:var(--stone);}
+
+.final{background:var(--ink);color:var(--paper);text-align:center;padding:76px 24px;}
+.final h2{font-size:32px;font-weight:700;margin-bottom:14px;}
+.final p{color:#c7d2c9;margin-bottom:30px;}
+
+footer{padding:28px 24px;text-align:center;color:var(--stone);font-size:13px;}
+
+.wa-float{position:fixed;bottom:22px;left:22px;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:26px;box-shadow:0 10px 22px rgba(0,0,0,.28);z-index:100;}
+
+@media(max-width:760px){
+  .grid3,.steps-list,.testi-grid{grid-template-columns:1fr;}
+  .rings{width:420px;height:420px;}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important;}
+}
+</style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="brand"><!-- عدّل باسمك -->المدرب هلال الصفوك</div>
+  <a href="https://wa.me/212600707259" class="btn-ghost">واتساب مباشر</a>
+</header>
+
+<section class="hero">
+  <svg class="rings" viewBox="0 0 400 400" aria-hidden="true">
+    <circle cx="200" cy="200" r="60" fill="none" stroke="#c17f3e" stroke-opacity=".35"/>
+    <circle cx="200" cy="200" r="105" fill="none" stroke="#c17f3e" stroke-opacity=".25"/>
+    <circle cx="200" cy="200" r="150" fill="none" stroke="#c17f3e" stroke-opacity=".16"/>
+    <circle cx="200" cy="200" r="195" fill="none" stroke="#c17f3e" stroke-opacity=".08"/>
+  </svg>
+  <div class="wrap hero-inner">
+    <span class="eyebrow">فرصة عمل مرنة · دخل إضافي</span>
+    <h1><!-- عدّل العنوان -->ابنِ مشروعك خطوة بخطوة، وشاهد دخلك ينمو معك</h1>
+    <p class="sub"><!-- عدّل النص -->انضم لفريق يقدّم لك التدريب والدعم الكامل لبناء مصدر دخل مرن بجانب حياتك اليومية</p>
+    <a href="#cta" class="btn-primary">اعرف التفاصيل الآن</a>
+    <div class="hero-figure">📷 ضع صورتك الشخصية هنا</div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">هل هذا لك؟</span>
+      <h2>هذا المشروع مناسب لك إذا...</h2>
+    </div>
+    <div class="qualify-list">
+      <div class="qualify-item"><div class="tick">✓</div><p><!-- عدّل -->تدور على مصدر دخل إضافي مرن بجانب شغلك الحالي</p></div>
+      <div class="qualify-item"><div class="tick">✓</div><p><!-- عدّل -->تحب فكرة إنك صاحب مشروعك الخاص</p></div>
+      <div class="qualify-item"><div class="tick">✓</div><p><!-- عدّل -->عندك ولو ساعة يوميًا تقدر تخصصها بانتظام</p></div>
+      <div class="qualify-item"><div class="tick">✓</div><p><!-- عدّل -->متحمس تتعلم مهارات جديدة بالتسويق وبناء العلاقات</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">وش بتحصل</span>
+      <h2>كل اللي تحتاجه للبداية</h2>
+      <p>ما تبدأ لحالك — عندك دعم بكل خطوة</p>
+    </div>
+    <div class="grid3">
+      <div class="card">
+        <div class="icon">🎯</div>
+        <h3><!-- عدّل -->تدريب ودعم كامل</h3>
+        <p><!-- عدّل -->خطوات واضحة من أول يوم، ومتابعة مستمرة من الفريق</p>
+      </div>
+      <div class="card">
+        <div class="icon">📱</div>
+        <h3><!-- عدّل -->مرونة كاملة بوقتك</h3>
+        <p><!-- عدّل -->اشتغل من جوالك، بالوقت اللي يناسبك أنت</p>
+      </div>
+      <div class="card">
+        <div class="icon">🌱</div>
+        <h3><!-- عدّل -->بداية بتكلفة بسيطة</h3>
+        <p><!-- عدّل -->ما تحتاج رأس مال كبير ولا خبرة سابقة</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">ثلاث خطوات</span>
+      <h2>كيف تبدأ؟</h2>
+    </div>
+    <div class="steps-list">
+      <div class="step"><div class="step-ring"><span>1</span></div><h3>تواصل معي</h3><p>راسلني على واتساب لأشرح لك الفكرة</p></div>
+      <div class="step"><div class="step-ring"><span>2</span></div><h3>جلسة تعريفية</h3><p>نتناقش هل المشروع مناسب لك ووش الخطوات</p></div>
+      <div class="step"><div class="step-ring"><span>3</span></div><h3>ابدأ بجهدك</h3><p>خطوات مدروسة ودعم مستمر من الفريق</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section tint">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">تجارب حقيقية</span>
+      <h2>قالوا عن تجربتهم</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi">
+        <div class="mark" aria-hidden="true"></div>
+        <p><!-- استبدل بشهادة حقيقية -->بدأت المشروع بجانب وظيفتي، والتدريب والدعم خلّوا البداية أسهل من اللي توقعت</p>
+        <div class="name">اسم الشريك، المدينة</div>
+      </div>
+      <div class="testi">
+        <div class="mark" aria-hidden="true"></div>
+        <p><!-- استبدل بشهادة حقيقية -->أحب إني أدير وقتي بنفسي وأشتغل على مشروعي من جوالي وقتما بي</p>
+        <div class="name">اسم الشريك، المدينة</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">استفساراتك</span>
+      <h2>أسئلة شائعة</h2>
+    </div>
+    <details>
+      <summary>هل أحتاج خبرة سابقة؟</summary>
+      <p><!-- عدّل -->لا، التدريب يبدأ من الأساسيات ولا يحتاج أي خبرة سابقة</p>
+    </details>
+    <details>
+      <summary>كم من الوقت أحتاج أسبوعيًا؟</summary>
+      <p><!-- عدّل -->يعتمد عليك بالكامل، تقدر تبدأ بساعات قليلة وتزيد حسب رغبتك</p>
+    </details>
+    <details>
+      <summary>هل يحتاج رأس مال كبير؟</summary>
+      <p><!-- عدّل -->لا، التكلفة بسيطة مقارنة بالمشاريع التقليدية، ونوضح لك كل التفاصيل بالجلسة التعريفية</p>
+    </details>
+    <details>
+      <summary>هل الدخل مضمون؟</summary>
+      <p><!-- عدّل -->الدخل يعتمد على جهدك ووقتك المخصص، مثل أي مشروع حقيقي. نقدّم لك الأدوات والدعم، والنتيجة تبنيها أنت</p>
+    </details>
+  </div>
+</section>
+
+<section class="final" id="cta">
+  <div class="wrap">
+    <h2>جاهز تعرف التفاصيل؟</h2>
+    <p>تواصل معي الآن واحجز جلستك التعريفية المجانية</p>
+    <a href="https://wa.me/212600707259?text=مرحبًا%20أريد%20معرفة%20تفاصيل%20الفرصة" class="btn-primary">راسلني على واتساب</a>
+  </div>
+</section>
+
+<footer>
+  <!-- عدّل بمعلوماتك -->© 2026 المدرب هلال الصفوك · رائد أعمال مستقل · الدخل يعتمد على الجهد الفردي، والنتائج تختلف من شخص لآخر
+</footer>
+
+<a href="https://wa.me/212600707259" class="wa-float" aria-label="تواصل عبر واتساب">💬</a>
+
+</body>
+</html>
